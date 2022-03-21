@@ -1,3 +1,0 @@
-# FX2 and FX3 Cypress USB driver
-KERNEL=="*", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ACTION=="add", ATTR{idVendor}=="04b4", MODE="666", TAG="cyusb_dev", RUN+="/usr/local/bin/cy_renumerate.sh A"
-KERNEL=="*", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ACTION=="remove", TAG=="cyusb_dev", RUN+="/usr/local/bin/cy_renumerate.sh R"
